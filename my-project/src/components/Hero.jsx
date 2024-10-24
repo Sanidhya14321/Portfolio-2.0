@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HERO_CONTENT } from '../constants'
-import sanid from "../assets/sanid.jpg"
+import sanid from "../assets/Sanid.jpg"
 import Loader from './Loader'
 
 const textVariants={
