@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { RiMenu3Line } from "react-icons/ri"
 import { RiCloseFill } from "react-icons/ri";
-import { DiCelluloid } from 'react-icons/di';
 import {LINKS} from  "../constants/index.js"
 import { Link } from 'react-router-dom';
 
