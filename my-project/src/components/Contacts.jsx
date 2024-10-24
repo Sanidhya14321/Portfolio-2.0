@@ -91,11 +91,13 @@ const Contacts = () => {
           );
         })}
       </div>
-      <motion.p className='text-sm text-stone-400 mt-36'
-      initial="hidden"
-      whileInView="visible"
-      custom={1.6}
-      variants={textVariants}>
+      <motion.p 
+        className='text-sm text-stone-400 mt-36'
+        initial="hidden"
+        whileInView="visible"
+        custom={1.6}
+        variants={textVariants}
+      >
         {CONTACT_CONTENT.footerText}
       </motion.p>
     </section>
