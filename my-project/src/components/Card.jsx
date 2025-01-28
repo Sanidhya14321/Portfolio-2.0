@@ -55,8 +55,7 @@ const FlipCard = ({ project }) => {
   return (
     <motion.div
       className="flip-card"
-      onHoverStart={() => setIsFlipped(true)}
-      onHoverEnd={() => setIsFlipped(false)}
+      
       onClick={handleFlip}
     >
       <motion.div

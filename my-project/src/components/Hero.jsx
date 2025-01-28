@@ -2,8 +2,7 @@ import React, { useState , useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HERO_CONTENT } from '../constants'
 import sanid from "../assets/Sanid.jpg"
-import Loader from './Loader'
-
+import DecryptedText from './DecryptedText'
 const textVariants={
     hidden:{opacity:0,y:50},
     visible:{opacity:1,y:0,transition:{duration:0.8,ease:"easeInOut"}}
@@ -33,7 +32,13 @@ const Hero = () => {
             variants={containerVariants}>
                 <motion.h1 className='text-2xl md:text-3xl lg:text-5xl my-14'
                 variants={textVariants}>
-                    {HERO_CONTENT.greeting}
+                    
+                    <DecryptedText text={HERO_CONTENT.greeting}
+                    animateOn='view'
+                    revealDirection='start'
+                    speed={60}
+                    maxIterations={10}
+                    sequential={true}/>
                 </motion.h1>
                 <motion.p className='text-lg md:text-xl lg:text-3xl mb-4'
                 variants={textVariants}>

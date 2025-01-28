@@ -9,6 +9,9 @@ import { useState,useEffect } from 'react'
 import About from './components/About'
 import Experience from './components/Experience'
 import Contacts from './components/Contacts'
+import Cursor from './components/Cursor'
+
+
 
 const App = () => {
   const [loading,setLoading]=useState(false)
@@ -21,12 +24,14 @@ const App = () => {
   },[])
   return (
       <div>
+        <Cursor/>
         {loading ? <Loader/> :(
         <Router>
         <NavBar/>
         <BlurBackground/>
           <Routes>
             <Route path="/" element={<>
+              
               <Hero/>
               <Projects/>
               <About/>
