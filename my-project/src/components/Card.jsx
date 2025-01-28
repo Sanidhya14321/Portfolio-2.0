@@ -8,7 +8,7 @@ const Card = () => {
     hidden: {
       opacity: 0,
       scale: 0.8,
-      rotate: -40,
+      rotate: -30,
       y: 50,
     },
     visible: {
@@ -67,7 +67,7 @@ const FlipCard = ({ project }) => {
           <p className="title">{project.name}</p>
         </div>
         <div className="flip-card-back">
-          <img src={project.image} alt={project.name} />
+          <img src={project.image} alt={project.name} className=" rounded-xl"/>
           <p className="text-orange-500 text-2xl mx-4 mt-5">{project.description}</p>
         </div>
       </motion.div>

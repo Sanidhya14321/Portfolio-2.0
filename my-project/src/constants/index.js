@@ -1,7 +1,7 @@
 import projects1 from "../assets/Project1.png";
 import projects2 from "../assets/Project2.png";
-import projects3 from "../assets/projects3.webp";
-import projects4 from "../assets/projects4.webp";
+import projects3 from "../assets/Project3.jpg";
+import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
 
