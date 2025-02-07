@@ -43,9 +43,9 @@ const NavBar = () => {
             <div className='md:hidden p-2 bg-stone-950/30 backdrop-blur-lg 
             rounded-xl flex flex-col space-y-4 max-w-6xl mx-auto'>
                 {LINKS.map((link,index)=>(
-                    <p key={index} className='
-                    text-white hover:text-stone-400 transition duration-300' 
-                    onClick={handleClick}>{link.label}</p>
+                    <Link to={link.linker} key={index} className='text-white hover:text-stone-400 transition duration-300'>
+                        {link.label}
+                    </Link>
                 ))}
             </div>
         )}
