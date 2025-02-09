@@ -4,7 +4,7 @@ import projects3 from "../assets/Project3.jpg";
 import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
-import resume from "../assets/resume.pdf";
+
 
 import person1 from "../assets/person1.webp";
 import person2 from "../assets/person2.webp";
@@ -27,7 +27,7 @@ export const HERO_CONTENT = {
   description:
     "I'm a Detail-driven software developer with a strong base in HTML, CSS, JavaScript and DOM, and MERN stack. Has experience with Python, C, and C++ programming. Special interest in scalable web applications, AI/ML, and future technologies such as blockchain.",
   resumeLinkText: "Download Resume",
-  resumeLink: {resume},
+  resumeLink: "./resume.pdf",
 };
 
 export const PROJECTS = [
