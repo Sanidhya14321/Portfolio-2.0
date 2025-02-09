@@ -89,7 +89,7 @@ function Cursor() {
       ? "translate(-50%, -50%) scale(0.7)"
       : "translate(-50%, -50%) scale(1)";
     cursorDotOutline.current.style.transform = enlarged
-      ? "translate(-50%, -50%) scale(5)"
+      ? "translate(-50%, -50%) scale(2)"
       : "translate(-50%, -50%) scale(1)";
   }
 

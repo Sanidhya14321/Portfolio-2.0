@@ -325,7 +325,7 @@ class App {
   createCamera() {
     this.camera = new Camera(this.gl)
     this.camera.fov = 45
-    this.camera.position.z = 20
+    this.camera.position.z =10
   }
   createScene() {
     this.scene = new Transform()
@@ -367,7 +367,7 @@ class App {
           text: "FitConnect",
           description: "Fitness social network to connect athletes and trainers",
           image: projects5,
-          link: "https://github.com/your-github/fitconnect",
+          link: "https://github.com/Sanidhya14321/SocialFitness",
         },
         {
           text: "WellNest",
