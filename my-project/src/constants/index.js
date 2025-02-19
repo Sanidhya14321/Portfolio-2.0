@@ -21,7 +21,7 @@ export const LINKS = [
 ];
 
 export const HERO_CONTENT = {
-  greeting: "I am",
+  greeting: "I am a",
   introduction:
     "I’m Sanidhya, a creative frontend developer, crafting immersive and intuitive web experiences.",
   description:

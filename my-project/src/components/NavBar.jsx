@@ -4,6 +4,8 @@ import { RiMenu3Line } from "react-icons/ri"
 import { RiCloseFill } from "react-icons/ri";
 import {LINKS} from  "../constants/index.js"
 import { Link } from 'react-router-dom';
+import CircularText from './CircularText.jsx';
+import Button from './Button.jsx';
 
 const NavBar = () => {
     const[menuOpen,setMenuOpen]=useState(false)
@@ -16,14 +18,19 @@ const NavBar = () => {
          bg-stone-950/30 p-4 md:rounded-xl backdrop-blur-lg'>
             <div className='text-white font-semibold cursor-pointer text-3xl uppercase'>
                 
-                    <Link to="/"> <h1>SANIDHYA VATS</h1></Link>
+                    <Link to="/"> <CircularText
+  text="SANIDHYA * VATS * "
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+/></Link>
                 
             </div>
 
             <div className='hidden md:flex cursor-pointer  space-x-8'>
                 {LINKS.map((link,index)=>(
                     <Link to={link.linker} key={index} className='text-white hover:text-stone-400 transition duration-300'>
-                        {link.label}
+                        <Button text={link.label}></Button>
                     </Link>
                 ))}
             </div>
