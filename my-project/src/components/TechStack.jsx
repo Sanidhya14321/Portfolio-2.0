@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Carousel from './Carousel';
+import ResponsiveCarousel from './ResponsiveCarousel';
 
 const TechStackCard = () => {
   const techStack = [
@@ -27,16 +28,9 @@ const TechStackCard = () => {
   return (
     <div>
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10 mt-10 flex justify-center">Tech-Stack</h1>
-      <div style={{ height: '400px', position: 'relative' }} className='items-center justify-center flex'>
-  <Carousel
-    baseWidth={400}
-    autoplay={true}
-    autoplayDelay={1700}
-    pauseOnHover={true}
-    loop={true}
-    round={true}
-  />
-</div>
+  <div className='flex items-center justify-center'>
+  <ResponsiveCarousel/>
+  </div>
     </div>
   );
 };
