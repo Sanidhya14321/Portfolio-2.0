@@ -1,55 +1,33 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaBolt } from 'react-icons/fa'; 
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import CircularText from "./CircularText";
 
 const Loader = () => {
-  const letters = ["S", "V"]; 
-  const variants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0 },
-    transition: {
-      duration: 2.0, 
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut",
-    },
-  };
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setStartAnimation(true);
+    }, 2500);
+  }, []);
 
   return (
-    <div style={styles.loaderContainer}>
-      {letters.map((letter, index) => (
-        <motion.div
-          key={index}
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ ...variants.transition, delay: index * 0.1 }}
-          style={styles.letter}
-        >
-          {letter}
-        </motion.div>
-      ))}
-    </div>
+    <motion.div
+      className="fixed inset-0 flex justify-center items-center bg-black"
+      animate={startAnimation ? { backdropFilter: "blur(20px)", opacity: 0 } : {}}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
+      <motion.div
+        className="absolute"
+        initial={{ top: "50%", left: "50%", translateX: "-50%", translateY: "-50%" }}
+        animate={startAnimation ? { top: "5rem", left: "11rem", translateX: "0", translateY: "0" } : {}}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <CircularText text="SANIDHYA * VATS * " onHover="speedUp" spinDuration={20} />
+      </motion.div>
+    </motion.div>
   );
 };
 
-const styles = {
-  loaderContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    backgroundColor: '#000', 
-    fontSize: '48px',
-    color: '#FFD700',
-  },
-  letter: {
-    margin: '0 10px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100px', 
-  },
-};
-
 export default Loader;
+
