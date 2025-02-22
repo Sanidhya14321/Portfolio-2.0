@@ -202,11 +202,11 @@ export default function Carousel({
         className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
           }`}
       >
-        <div className="mt-4 flex w-[150px] justify-between px-8">
+        <div className="mt-4 flex w-[200px] justify-between px-8">
           {items.map((_, index) => (
             <motion.div
               key={index}
-              className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index
+              className={`h-[5px] w-[5px] rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index
                 ? round
                   ? "bg-white"
                   : "bg-[#333333]"

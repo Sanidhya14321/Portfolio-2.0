@@ -97,8 +97,8 @@ const Hero = () => {
             <img
               src={sanid}
               alt="Sanidhya Vats"
-              width={450}
-              height={450}
+              width={350}
+              height={200}
               className="rounded-3xl"
             />
           </motion.div>
