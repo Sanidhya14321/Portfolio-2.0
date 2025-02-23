@@ -29,8 +29,8 @@ const App = () => {
     opacity-70'>
   <LiquidChrome
     baseColor={[0,0.2,0.2]}
-    speed={0.5}
-    amplitude={0.4}
+    speed={0.2}
+    amplitude={0.1}
     interactive={false}
   />
 </div>
