@@ -13,11 +13,11 @@ const About = () => {
         }
     }
   return (
-    <section  className='px-6 py-10' id='about'>
-        <h1 className='text-4xl md:text-6xl font-medium  tracking-tight mb-10'>
+    <section  className='px-6 py-10 mt-20' id='about'>
+        <h1 className='text-4xl md:text-6xl font-medium  tracking-tight '>
             About
         </h1>
-        <div className='h-1 w-20 bg-white mb-8'></div>
+        <div className='h-1 w-20 bg-white mb-10'></div>
         <div className='max-w-4xl mx-auto'>
             {ABOUT_CONTENT.paragraphs.map((paragraph,index)=>(
                 <motion.div key={index} className="text-lg md:text-xl lg:text-3xl mb-10 leading-relaxed" 

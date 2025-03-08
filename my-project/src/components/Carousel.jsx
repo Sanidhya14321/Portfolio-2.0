@@ -1,13 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
-import {
-  FiCircle,
-  FiCode,
-  FiFileText,
-  FiLayers,
-  FiLayout,
-} from "react-icons/fi";
 
 const DEFAULT_ITEMS = [
   { id: 1, title: 'MongoDB', icon: 'https://img.icons8.com/color/48/000000/mongodb.png', description: 'A NoSQL database for scalable and flexible data storage.' },

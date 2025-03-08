@@ -8,9 +8,6 @@
   font-weight: 900;
 }
 
-.bg-image{
-  background-image: url("./assets/jason-root.webp");
-}
 
 #work,#experience,#about,#contact{
   scroll-margin-top: 80px;

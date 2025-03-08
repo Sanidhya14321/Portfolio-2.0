@@ -32,8 +32,8 @@ const iconVariants = {
 const Contacts = () => {
   return (
     <section className='min-h-screen flex flex-col justify-center px-4 md:px-10 ' id='contact'>
-      <h2 className='text-4xl md:text-6xl font-medium tracking-tight mb-10'>Contact</h2>
-      <div className='h-1 w-20 bg-white'></div>
+      <h2 className='text-4xl md:text-6xl font-medium tracking-tight '>Contact</h2>
+      <div className='h-1 w-20 bg-white mb-10'></div>
       <motion.h3
         className='text-6xl md:text-8xl leading-none'
         initial="hidden"

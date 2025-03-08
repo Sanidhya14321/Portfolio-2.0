@@ -16,16 +16,16 @@ import person6 from "../assets/person6.webp";
 export const LINKS = [
   { label: "Work" , linker:"/work"},
   {  label: "About" , linker:"/about"},
-  { label: "Experience",linker:"/experience" },
+  { label: "Education",linker:"/education" },
   { label: "Contact" ,linker :"/contacts"},
 ];
 
 export const HERO_CONTENT = {
-  greeting: "I am a",
+  greeting: "Hi, I am Sanidhya",
   introduction:
-    "I’m Sanidhya, a creative frontend developer, crafting immersive and intuitive web experiences.",
+    "A software developer",
   description:
-    "I'm a Detail-driven software developer with a strong base in HTML, CSS, JavaScript and DOM, and MERN stack. Has experience with Python, C, and C++ programming. Special interest in scalable web applications, AI/ML, and future technologies such as blockchain.",
+    "I am from India and I am a Computer Science student at Maharaja Surajmal Institute Of Technology.",
   resumeLinkText: "Download Resume",
   resumeLink: "./resume.pdf",
 };
@@ -72,12 +72,11 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I am a dedicated frontend developer with a passion for building modern web applications that are both functional and aesthetically pleasing. Over the years, I have worked on numerous projects ranging from single-page applications to complex multi-tiered systems, always ensuring high performance and seamless user experiences.",
-    "I specialize in using technologies like React, Node.js, MongoDB, and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.",
+    "I am a frontend developer with expertise in React, Node.js, MongoDB, and Tailwind CSS. I build scalable, high-performance web applications with clean, maintainable code. I focus on creating responsive interfaces and collaborating with teams to align development with business goals. Always learning and adapting to new technologies, I ensure efficient and modern solutions.",
   ],
 };
 
-export const EXPERIENCES = [
+export const Education = [
   {
     yearRange: "2023 — 2027",
     title: "Maharaja Surajmal Institute Of Technology",
@@ -92,6 +91,24 @@ export const EXPERIENCES = [
     description: ["PCM with Computer Information",
     ],
   },
+  {
+    yearRange: "2019-2020",
+    title: "Delhi Public School Neelbad",
+    location: "Bhopal",
+    description: [],
+  },
+  {
+    yearRange: "2017-2018",
+    title: "St. Joseph's Convent School",
+    location: "Itarsi",
+    description: [],
+  },
+  {
+    yearRange: "2014-2016",
+    title: "St. Andrew's School",
+    location: "Hyderabad",
+    description: [],
+},
 ];
 
 

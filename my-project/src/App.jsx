@@ -6,10 +6,10 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Loader from "./components/Loader";
 import About from "./components/About";
-import Experience from "./components/Experience";
 import Contacts from "./components/Contacts";
 import Cursor from "./components/Cursor";
 import LiquidChrome from "./components/BlurBackground";
+import Educations from "./components/Experience";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,10 +25,10 @@ const App = () => {
       <Cursor />
       
       <div className='fixed top-0 left-0 w-full h-full overflow-hidden -z-10
-    pointer-events-none flex justify-center items-center filter blur-[100px]
+    pointer-events-none flex justify-center items-center filter blur-[160px]
     opacity-70'>
   <LiquidChrome
-    baseColor={[0,0.2,0.2]}
+    baseColor={[0.1,0.1,0.1]}
     speed={0.2}
     amplitude={0.1}
     interactive={false}
@@ -52,14 +52,14 @@ const App = () => {
                 <Hero />
                 <Projects />
                 <About />
-                <Experience />
+                <Educations />
                 <Contacts />
               </>
             }
           />
           <Route path="/work" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Educations />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </motion.div>

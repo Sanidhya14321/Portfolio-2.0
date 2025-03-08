@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
 import sanid from "../assets/Sanid.jpg";
-import DecryptedText from "./DecryptedText";
-import RotatingText from "./RotatingText";
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -29,55 +27,36 @@ const Hero = () => {
     <div>
       <section>
         <div
-          className="relative z-10 min-h-screen flex flex-wrap flex-col
-        md:flex-row items-center justify-center md:pl-52 mt-10"
+          className="z-10 min-h-screen flex flex-wrap 
+        md:flex-row items-center justify-center mt-10"
         >
           <motion.div
-            className="w-full md:w-1/2 p-8"
+            className="w-full md:w-2/3 p-8 self-center"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
           >
             <motion.h1
-              className="text-2xl md:text-3xl lg:text-5xl my-14 flex gap-3"
+              className="text-2xl md:text-3xl lg:text-5xl my-5 flex gap-3 md:ml-52"
               variants={textVariants}
             >
-              <DecryptedText
-                text={HERO_CONTENT.greeting}
-                animateOn="view"
-                revealDirection="start"
-                speed={60}
-                maxIterations={10}
-                sequential={true}
-                className=""
-              />
-              <RotatingText
-                texts={["Web Developer","UI/UX Designer","Tech Enthusiast"]}
-                mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg "
-                staggerFrom={"last"}
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
-                staggerDuration={0.025}
-                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={2000}
-              />
+              {HERO_CONTENT.greeting}
+              
             </motion.h1>
             <motion.p
-              className="text-lg md:text-xl lg:text-3xl mb-4"
+              className="text-lg md:text-xl lg:text-3xl mb-4 md:ml-52"
               variants={textVariants}
             >
               {HERO_CONTENT.introduction}
             </motion.p>
             <motion.p
-              className="text-lg md:text-xl lg:text-3xl "
+              className="text-lg md:text-xl lg:text-3xl md:ml-52"
               variants={textVariants}
             >
               {HERO_CONTENT.description}
             </motion.p>
             <motion.a
-              className="bg-stone-50 text-stone-900 p-3 lg:p-4
+              className="bg-stone-50 text-stone-900 p-3 lg:p-4 md:ml-52
                 mt-8 inline-block rounded-2xl"
               href="./public/resume.pdf"
               download
@@ -89,7 +68,7 @@ const Hero = () => {
             </motion.a>
           </motion.div>
           <motion.div
-            className="w-full md:w-1/2 p-8"
+            className="w-full md:w-1/3 p-8"
             initial="hidden"
             animate="visible"
             variants={imageVariants}
