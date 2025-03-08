@@ -34,7 +34,7 @@ const TechStackCard = () => {
         {techStack.map((tech, index) => (
           <div key={index} className="flex items-center justify-center ">
             <SpotlightCard
-              className="custom-spotlight-card w-44 md:w-72"
+              className="custom-spotlight-card w-44 md:w-72 bg-neutral-900/70"
               spotlightColor="rgba(0, 229, 255, 0.2)"
             >
               <img src={tech.icon} alt={tech.title} className="h-12 min-w-12" />

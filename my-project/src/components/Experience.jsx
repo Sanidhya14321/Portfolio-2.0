@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Education } from '../constants'
+import SpotlightCard from './SpotlightCard'
 
 const Educations = () => {
     const containerVariants={
@@ -47,8 +48,14 @@ const Educations = () => {
                         <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4 md:ml-20'>
                             {experience.yearRange}
                         </div>
+
                         <div className='md:w-3/4 '>
-                            <div className='max-w-3xl backdrop-blur-3xl p-4 bg-stone-600/10 rounded-lg'>
+                        
+                            <div className='max-w-3xl rounded-lg'>
+                            <SpotlightCard
+              className="custom-spotlight-card bg-neutral-900/30"
+              spotlightColor="rgba(0, 229, 255, 0.2)"
+            >
                                 <h2 className='text-xl mb-2'>
                                     {experience.title}
                                 </h2>
@@ -60,8 +67,11 @@ const Educations = () => {
                                         <li key={index}>{desc}</li>
                                     ))}
                                 </ul>
+                                </SpotlightCard>
                             </div>   
+                            
                         </div>
+                        
                     </div>
                 </motion.div>
             ))}
