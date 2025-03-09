@@ -50,8 +50,9 @@ const App = () => {
             element={
               <>
                 <Hero />
-                <Projects />
                 <About />
+                <Projects />
+                
                 <Educations />
                 <Contacts />
               </>
