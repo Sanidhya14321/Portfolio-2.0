@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import React from 'react'
 import { PROJECTS } from "../constants";
 import CircularGallery from "./CircularGallery";
+import ProjectCard from "./ProjectCard";
+import ProjectsGrid from "./ProjectGrid";
 
 const Projects = () => {
     const projectVariants={
@@ -26,9 +28,7 @@ const Projects = () => {
     <section className="px-6 py-10" id="work">
         <h1 className="text-4xl md:text-6xl font-medium tracking-tight mt-10">Projects</h1>
         <div className="h-1 w-20 mb-10 bg-white"></div>
-        <div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={3} borderRadius={0.05}/>
-</div>
+        <ProjectsGrid/>
     </section>
   )
 }
