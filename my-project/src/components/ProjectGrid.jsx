@@ -22,8 +22,8 @@ export default function ProjectsGrid() {
         "Recommendation system",
         "Dark and light mode support",
       ],
-      liveUrl: "https://github.com/your-github/streamerzz",
-      githubUrl: "https://github.com/your-github/streamerzz",
+      liveUrl: "https://github.com/Sanidhya14321/youtube-clone",
+      githubUrl: "https://github.com/Sanidhya14321/youtube-clone",
     },
     {
       title: "Todo App",
@@ -39,8 +39,8 @@ export default function ProjectsGrid() {
         "Progress tracking",
         "Cloud sync with Firebase",
       ],
-      liveUrl: "https://github.com/your-github/nutritrack",
-      githubUrl: "https://github.com/your-github/nutritrack",
+      liveUrl: "https://github.com/Sanidhya14321/todo",
+      githubUrl: "https://github.com/Sanidhya14321/todo",
     },
     {
       title: "HairRevive",
@@ -56,8 +56,8 @@ export default function ProjectsGrid() {
         "User testimonials and success stories",
         "Subscription-based expert consultations",
       ],
-      liveUrl: "https://github.com/your-github/hairrevive",
-      githubUrl: "https://github.com/your-github/hairrevive",
+      liveUrl: "https://github.com/Sanidhya14321/HairRevive",
+      githubUrl: "https://github.com/Sanidhya14321/HairRevive",
     },
     {
       title: "DevDeck",
@@ -73,8 +73,8 @@ export default function ProjectsGrid() {
         "Customizable widgets",
         "Dark and light mode themes",
       ],
-      liveUrl: "https://github.com/your-github/devdeck",
-      githubUrl: "https://github.com/your-github/devdeck",
+      liveUrl: "https://github.com/Sanidhya14321/devdeck",
+      githubUrl: "https://github.com/Sanidhya14321/devdeck",
     },
     {
       title: "FitConnect",
@@ -90,8 +90,8 @@ export default function ProjectsGrid() {
         "Community challenges",
         "Goal setting and progress tracking",
       ],
-      liveUrl: "https://github.com/your-github/fitconnect",
-      githubUrl: "https://github.com/your-github/fitconnect",
+      liveUrl: "https://github.com/Sanidhya14321/SocialFitness",
+      githubUrl: "https://github.com/Sanidhya14321/SocialFitness",
     },
     {
       title: "WellNest",
@@ -107,8 +107,8 @@ export default function ProjectsGrid() {
         "Community support groups",
         "Progress analytics",
       ],
-      liveUrl: "https://github.com/your-github/wellnest",
-      githubUrl: "https://github.com/your-github/wellnest",
+      liveUrl: "https://github.com/Sanidhya14321/Wellness-App",
+      githubUrl: "https://github.com/Sanidhya14321/Wellness-App",
     },
   ];
 

@@ -58,7 +58,7 @@ export default function ProjectCard({ project }) {
             <div className="flex justify-between items-center mt-4">
               <button
                 onClick={() => setIsOpen(true)}
-                className="inline-flex items-center justify-center rounded-md bg-blue-900/70 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-900/70 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700/90 dark:hover:bg-blue-900/90"
+                className="inline-flex items-center justify-center rounded-md bg-gray-900/70 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-900/70 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:bg-gray-900/90 dark:hover:bg-gray-700/90"
               >
                 Read More
               </button>
@@ -156,6 +156,13 @@ export default function ProjectCard({ project }) {
             <div>
               <h2 className="text-lg font-semibold leading-none tracking-tight">{projectData.title}</h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{projectData.description}</p>
+              <div className="overflow-hidden rounded-md">
+            <img
+              src={projectData.image || "/placeholder.svg?height=300&width=400"}
+              alt={projectData.title}
+              className="h-48 w-full object-cover transition-all group-hover:scale-105 sm:h-64"
+            />
+          </div>
             </div>
 
             <div className="grid gap-4 py-4">
@@ -187,6 +194,7 @@ export default function ProjectCard({ project }) {
                     >
                       {tech}
                     </span>
+                    
                   ))}
                 </div>
               </div>
@@ -214,7 +222,7 @@ export default function ProjectCard({ project }) {
                   href={projectData.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+                  className="inline-flex items-center justify-center rounded-md bg-gray-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:bg-gray-600 dark:hover:bg-gray-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

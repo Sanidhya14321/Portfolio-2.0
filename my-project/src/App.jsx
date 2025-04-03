@@ -23,17 +23,19 @@ const App = () => {
   return (
     <Router>
       <Cursor />
-      
-      <div className='fixed top-0 left-0 w-full h-full overflow-hidden -z-10
+
+      <div
+        className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10
     pointer-events-none flex justify-center items-center filter blur-[160px]
-    opacity-70'>
-  <LiquidChrome
-    baseColor={[0.1,0.1,0.1]}
-    speed={0.2}
-    amplitude={0.1}
-    interactive={false}
-  />
-</div>
+    opacity-70"
+      >
+        <LiquidChrome
+          baseColor={[0.1, 0.1, 0.1]}
+          speed={0.2}
+          amplitude={0.1}
+          interactive={false}
+        />
+      </div>
 
       {loading && <Loader />}
 
@@ -52,7 +54,7 @@ const App = () => {
                 <Hero />
                 <About />
                 <Projects />
-                
+
                 <Educations />
                 <Contacts />
               </>
@@ -69,4 +71,3 @@ const App = () => {
 };
 
 export default App;
-  

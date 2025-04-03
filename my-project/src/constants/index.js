@@ -35,13 +35,13 @@ export const PROJECTS = [
     name: "U-tube",
     description: "Youtube Clone created with create-react-app",
     image: projects1,
-    link: "https://github.com/your-github/streamerzz",
+    link: "https://github.com/Sanidhya14321/youtube-clone",
   },
   {
     name: "Todo App",
     description: "Manage, Prioritize and finish your goals and tasks",
     image: projects2,
-    link: "https://github.com/your-github/nutritrack",
+    link: "https://github.com/Sanidhya14321/todo",
   },
   {
     name: "HairRevive",
@@ -54,19 +54,19 @@ export const PROJECTS = [
     description:
       "Interactive dashboard for developers to track coding activity",
     image: projects4,
-    link: "https://github.com/your-github/devdeck",
+    link: "https://github.com/Sanidhya14321/devdeck",
   },
   {
     name: "FitConnect",
     description: "Fitness social network to connect athletes and trainers",
     image: projects5,
-    link: "https://github.com/your-github/fitconnect",
+    link: "https://github.com/Sanidhya14321/SocialFitness",
   },
   {
     name: "WellNest",
     description: "A wellness app for mental and physical health improvement",
     image: projects6,
-    link: "https://github.com/your-github/wellnest",
+    link: "https://github.com/Sanidhya14321/Wellness-App",
   },
 ];
 
