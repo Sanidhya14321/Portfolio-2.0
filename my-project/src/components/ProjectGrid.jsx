@@ -5,6 +5,7 @@ import projects3 from "../assets/Project3.jpg";
 import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
+import projects7 from "../assets/project7.png";
 
 export default function ProjectsGrid() {
   const projects = [
@@ -22,7 +23,7 @@ export default function ProjectsGrid() {
         "Recommendation system",
         "Dark and light mode support",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/youtube-clone",
+      // liveUrl: "https://github.com/Sanidhya14321/youtube-clone",
       githubUrl: "https://github.com/Sanidhya14321/youtube-clone",
     },
     {
@@ -39,7 +40,7 @@ export default function ProjectsGrid() {
         "Progress tracking",
         "Cloud sync with Firebase",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/todo",
+      // liveUrl: "https://github.com/Sanidhya14321/todo",
       githubUrl: "https://github.com/Sanidhya14321/todo",
     },
     {
@@ -56,7 +57,7 @@ export default function ProjectsGrid() {
         "User testimonials and success stories",
         "Subscription-based expert consultations",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/HairRevive",
+      // liveUrl: "https://github.com/Sanidhya14321/HairRevive",
       githubUrl: "https://github.com/Sanidhya14321/HairRevive",
     },
     {
@@ -73,7 +74,7 @@ export default function ProjectsGrid() {
         "Customizable widgets",
         "Dark and light mode themes",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/devdeck",
+      // liveUrl: "https://github.com/Sanidhya14321/devdeck",
       githubUrl: "https://github.com/Sanidhya14321/devdeck",
     },
     {
@@ -90,7 +91,7 @@ export default function ProjectsGrid() {
         "Community challenges",
         "Goal setting and progress tracking",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/SocialFitness",
+      // liveUrl: "https://github.com/Sanidhya14321/SocialFitness",
       githubUrl: "https://github.com/Sanidhya14321/SocialFitness",
     },
     {
@@ -107,9 +108,26 @@ export default function ProjectsGrid() {
         "Community support groups",
         "Progress analytics",
       ],
-      liveUrl: "https://github.com/Sanidhya14321/Wellness-App",
+      // liveUrl: "https://github.com/Sanidhya14321/Wellness-App",
       githubUrl: "https://github.com/Sanidhya14321/Wellness-App",
     },
+    {
+      title: "CS-ASSESSMENT",
+      description: "An online assessment platform for computer science students",
+      image: projects7, // Fixed
+      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript",],
+      detailedDescription:
+        "CS-ASSESSMENT is an online assessment platform designed for computer science students. It allows users to take quizzes, track their progress, and receive feedback on their performance.",
+      features: [
+        "User authentication",
+        "Quiz creation and management",
+        "Progress tracking",
+        "Feedback system",
+        "Leaderboard",
+      ],
+      // liveUrl: "https://github.com/Sanidhya14321/assessment-2",
+      githubUrl: "https://github.com/Sanidhya14321/assessment-2",
+    }
   ];
 
   return (
