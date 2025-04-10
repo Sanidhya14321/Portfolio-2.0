@@ -143,6 +143,22 @@ export default function ProjectsGrid() {
       ],
       // liveUrl: "https://github.com/Sanidhya14321/SPARK",
       githubUrl: "https://github.com/Sanidhya14321/SPARK",
+    },
+    {
+      title: "CareerCompass",
+      description: "An online assessment platform for computer science students",
+      image: projects7, // Fixed
+      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript",],
+      detailedDescription:
+        "CS-ASSESSMENT is an online assessment platform designed for computer science students. It allows users to take quizzes, track their progress, and receive feedback on their performance.",
+      features: [
+        "Spark ensures secure login, granting users access to premium hackathon updates, events, and workshops.",
+        "Enables students to join inter-college communities, interact through blogs, and engage in discussions.",
+        "Facilitates hands-on open-source practice, empowering students with real-world development experience with Wide variety Internship Problem Statement Contributions.",
+        "Feedback system"
+      ],
+      // liveUrl: "https://github.com/Sanidhya14321/SPARK",
+      githubUrl: "https://github.com/Sanidhya14321/SPARK",
     }
   ];
 
