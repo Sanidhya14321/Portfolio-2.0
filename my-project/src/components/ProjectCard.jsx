@@ -128,7 +128,7 @@ export default function ProjectCard({ project }) {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-full max-w-[600px] max-h-[90vh] overflow-y-auto rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-900/100"
+            className="relative w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-900/100"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -160,7 +160,7 @@ export default function ProjectCard({ project }) {
             <img
               src={projectData.image || "/placeholder.svg?height=300&width=400"}
               alt={projectData.title}
-              className="h-48 w-full object-cover transition-all group-hover:scale-105 sm:h-64"
+              className="h-48 w-full object-cover transition-all group-hover:scale-105 sm:h-72"
             />
           </div>
             </div>
