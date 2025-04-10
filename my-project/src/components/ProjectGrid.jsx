@@ -6,6 +6,8 @@ import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
 import projects7 from "../assets/project7.png";
+import projects8 from "../assets/project8.png";
+import projects9 from "../assets/project9.png";
 
 export default function ProjectsGrid() {
   const projects = [
@@ -115,7 +117,7 @@ export default function ProjectsGrid() {
       title: "CS-ASSESSMENT",
       description: "An online assessment platform for computer science students",
       image: projects7, // Fixed
-      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript",],
+      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript","Bcrypt.js","Framer Motion"],
       detailedDescription:
         "CS-ASSESSMENT is an online assessment platform designed for computer science students. It allows users to take quizzes, track their progress, and receive feedback on their performance.",
       features: [
@@ -130,11 +132,11 @@ export default function ProjectsGrid() {
     },
     {
       title: "SPARK",
-      description: "An online assessment platform for computer science students",
-      image: projects7, // Fixed
-      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript",],
+      description: "A platform for students to stay updated with hackathons and events",
+      image: projects8, // Fixed
+      techStack: ["React.js", "Node.js", "Express.js", "JWT", "Bcrypt.js", "MongoDB", "Mongoose (ODM)", "Tailwind", "Redux.js", "RTK-Query"],
       detailedDescription:
-        "CS-ASSESSMENT is an online assessment platform designed for computer science students. It allows users to take quizzes, track their progress, and receive feedback on their performance.",
+        "SPARK is a platform designed to keep students updated with the latest hackathons, events, and workshops. It fosters community engagement through blogs and discussions.",
       features: [
         "Spark ensures secure login, granting users access to premium hackathon updates, events, and workshops.",
         "Enables students to join inter-college communities, interact through blogs, and engage in discussions.",
@@ -146,19 +148,19 @@ export default function ProjectsGrid() {
     },
     {
       title: "CareerCompass",
-      description: "An online assessment platform for computer science students",
-      image: projects7, // Fixed
-      techStack: ["Next","Nextauth", "MongoDB", "Tailwind CSS","Typescript",],
+      description: "AI-Powered Career Guidance Platform",
+      image: projects9, // Fixed
+      techStack: ["React.js", "Vite", "Framer Motion", "Three.js", "Tailwind CSS", "Node.js","Express.js", "MongoDB", "Firebase", "OpenAI API", 
+        "Botpress Webchat" ],
       detailedDescription:
-        "CS-ASSESSMENT is an online assessment platform designed for computer science students. It allows users to take quizzes, track their progress, and receive feedback on their performance.",
+        "CareerCompass is an AI-powered platform designed to guide students in choosing the right career path. It offers personalized assessments, career comparisons, and interactive chatbot support.",
       features: [
-        "Spark ensures secure login, granting users access to premium hackathon updates, events, and workshops.",
-        "Enables students to join inter-college communities, interact through blogs, and engage in discussions.",
-        "Facilitates hands-on open-source practice, empowering students with real-world development experience with Wide variety Internship Problem Statement Contributions.",
-        "Feedback system"
+        "AI-Powered Career Guidance: Assesses users through subject-related questions and recommends the most suitable career paths.",
+        "Career Field Comparison: Provides in-depth analysis of different career options, success rates, and growth opportunities.",
+        "Interactive Chatbot: Integrates AI-driven conversations for personalized career assessment and insights. ",
       ],
-      // liveUrl: "https://github.com/Sanidhya14321/SPARK",
-      githubUrl: "https://github.com/Sanidhya14321/SPARK",
+      liveUrl: "https://careercompass-xi.vercel.app/",
+      githubUrl: "https://github.com/Sanidhya14321/CareerCompass",
     }
   ];
 
