@@ -128,7 +128,7 @@ export default function ProjectCard({ project }) {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-900/100"
+            className="relative w-full max-w-[8700px] max-h-[90vh] overflow-y-auto rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-900/100"
             onClick={(e) => e.stopPropagation()}
           >
             <button
