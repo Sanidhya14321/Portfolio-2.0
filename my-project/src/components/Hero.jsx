@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
 import sanid from "../assets/Sanid.jpg";
-import resume from "../assets/Resume.pdf";
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -60,7 +59,7 @@ const Hero = () => {
               className="bg-stone-50 text-stone-900 p-3 lg:p-4 md:ml-52
                 mt-8 inline-block rounded-2xl"
               href="/resume.pdf"
-              download={resume}
+              download="Resume.pdf"
               rel="noopener noreferrer"
               target="_blank"
               variants={textVariants}
