@@ -4,7 +4,7 @@ import projects3 from "../assets/Project3.jpg";
 import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
-import resume from "../assets/Resume.pdf";
+
 
 
 import person1 from "../assets/person1.webp";
@@ -28,7 +28,7 @@ export const HERO_CONTENT = {
   description:
     "I am from India and I am a Computer Science student at Maharaja Surajmal Institute Of Technology.",
   resumeLinkText: "Download Resume",
-  resumeLink: {resume},
+  resumeLink: "/Sanidhya_Vats.pdf",
 };
 
 export const PROJECTS = [
