@@ -91,25 +91,7 @@ export const Education = [
     location: "Delhi",
     description: ["PCM with Computer Information",
     ],
-  },
-  {
-    yearRange: "2019-2020",
-    title: "Delhi Public School Neelbad",
-    location: "Bhopal",
-    description: [],
-  },
-  {
-    yearRange: "2017-2018",
-    title: "St. Joseph's Convent School",
-    location: "Itarsi",
-    description: [],
-  },
-  {
-    yearRange: "2014-2016",
-    title: "St. Andrew's School",
-    location: "Hyderabad",
-    description: [],
-},
+  }
 ];
 
 
