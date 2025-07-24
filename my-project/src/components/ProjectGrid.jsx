@@ -12,40 +12,6 @@ import projects9 from "../assets/project9.png";
 export default function ProjectsGrid() {
   const projects = [
     {
-      title: "U-tube",
-      description: "YouTube Clone created with create-react-app",
-      image: projects1, // Fixed
-      techStack: ["React", "Node.js", "Express", "MongoDB"],
-      detailedDescription:
-        "A fully functional YouTube clone where users can upload, watch, and interact with videos. It supports user authentication, video recommendations, and real-time comments.",
-      features: [
-        "Video upload and streaming",
-        "User authentication",
-        "Like, comment, and subscribe features",
-        "Recommendation system",
-        "Dark and light mode support",
-      ],
-      // liveUrl: "https://github.com/Sanidhya14321/youtube-clone",
-      githubUrl: "https://github.com/Sanidhya14321/youtube-clone",
-    },
-    {
-      title: "Todo App",
-      description: "Manage, prioritize, and finish your goals and tasks",
-      image: projects2, // Fixed
-      techStack: ["React", "Firebase", "Tailwind CSS"],
-      detailedDescription:
-        "A task management application designed to help users organize their daily activities efficiently. It offers categorization, prioritization, and reminders.",
-      features: [
-        "Task creation and management",
-        "Priority setting",
-        "Deadline reminders",
-        "Progress tracking",
-        "Cloud sync with Firebase",
-      ],
-      // liveUrl: "https://github.com/Sanidhya14321/todo",
-      githubUrl: "https://github.com/Sanidhya14321/todo",
-    },
-    {
       title: "HairRevive",
       description: "A platform for hair regrowth solutions powered by science",
       image: projects3, // Fixed
