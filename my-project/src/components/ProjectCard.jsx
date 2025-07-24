@@ -160,7 +160,7 @@ export default function ProjectCard({ project }) {
             <img
               src={projectData.image || "/placeholder.svg?height=300&width=400"}
               alt={projectData.title}
-              className="h-48 w-full object-cover transition-all group-hover:scale-105 sm:h-72"
+              className="h-48 w-full object-contain transition-all group-hover:scale-105 sm:h-96"
             />
           </div>
             </div>
