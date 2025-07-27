@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 
-import React from 'react'
-import { PROJECTS } from "../constants";
-import CircularGallery from "./CircularGallery";
-import ProjectCard from "./ProjectCard";
 import ProjectsGrid from "./ProjectGrid";
 
 const Projects = () => {

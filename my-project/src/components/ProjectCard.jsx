@@ -3,24 +3,6 @@ import { useState } from "react"
 export default function ProjectCard({ project }) {
   const [isOpen, setIsOpen] = useState(false)
 
-  // Default project if none is provided
-  const defaultProject = {
-    title: "Portfolio Website",
-    description: "A personal portfolio website showcasing my projects and skills.",
-    image: "/placeholder.svg?height=300&width=400",
-    techStack: ["React", "Tailwind CSS", "Vite", "JavaScript"],
-    detailedDescription:
-      "This portfolio website was built to showcase my projects and skills in web development. It features a responsive design, smooth animations, and a clean user interface.",
-    features: [
-      "Responsive design for all devices",
-      "Dark/Light mode toggle",
-      "Project showcase with filtering",
-      "Contact form with validation",
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/project",
-  }
-
   const projectData = project || defaultProject
 
   return (

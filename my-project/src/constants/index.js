@@ -1,5 +1,3 @@
-import projects1 from "../assets/Project1.png";
-import projects2 from "../assets/Project2.png";
 import projects3 from "../assets/Project3.jpg";
 import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
@@ -31,45 +29,6 @@ export const HERO_CONTENT = {
   resumeLink: "/Sanidhya_Vats.pdf",
 };
 
-export const PROJECTS = [
-  {
-    name: "U-tube",
-    description: "Youtube Clone created with create-react-app",
-    image: projects1,
-    link: "https://github.com/Sanidhya14321/youtube-clone",
-  },
-  {
-    name: "Todo App",
-    description: "Manage, Prioritize and finish your goals and tasks",
-    image: projects2,
-    link: "https://github.com/Sanidhya14321/todo",
-  },
-  {
-    name: "HairRevive",
-    description: "A platform for hair regrowth solutions powered by science",
-    image: projects3,
-    link: "https://github.com/your-github/hairrevive",
-  },
-  {
-    name: "DevDeck",
-    description:
-      "Interactive dashboard for developers to track coding activity",
-    image: projects4,
-    link: "https://github.com/Sanidhya14321/devdeck",
-  },
-  {
-    name: "FitConnect",
-    description: "Fitness social network to connect athletes and trainers",
-    image: projects5,
-    link: "https://github.com/Sanidhya14321/SocialFitness",
-  },
-  {
-    name: "WellNest",
-    description: "A wellness app for mental and physical health improvement",
-    image: projects6,
-    link: "https://github.com/Sanidhya14321/Wellness-App",
-  },
-];
 
 export const ABOUT_CONTENT = {
   paragraphs: [

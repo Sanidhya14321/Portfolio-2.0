@@ -18,14 +18,15 @@ const TechStackCard = () => {
   { title: 'Python', icon: 'https://img.icons8.com/color/48/000000/python.png', },
   { title: 'C', icon: 'https://img.icons8.com/color/48/000000/c-programming.png',  },
   { title: 'C++', icon: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png',  },
-  { progress:"In Progress",title: 'Pandas', icon: 'https://img.icons8.com/color/48/000000/pandas.png',  },
-  { progress:"In Progress",title: 'NumPy', icon: 'https://img.icons8.com/color/48/000000/numpy.png',  },
-  { progress:"In Progress",title: 'Solidity', icon: 'https://img.icons8.com/color/48/000000/solidity.png', },
+  { title: 'Pandas', icon: 'https://img.icons8.com/color/48/000000/pandas.png',  },
+  { title: 'NumPy', icon: 'https://img.icons8.com/color/48/000000/numpy.png',  },
+  { title: 'Seaborn', icon: 'https://user-images.githubusercontent.com/315810/92254613-279c8000-ee9f-11ea-9b73-5622a7d95f3f.png',},
+  { title: 'MatPlotLib', icon: 'https://img.icons8.com/color/48/000000/matplotlib.png',}
   
   ];
 
   return (
-    <div>
+    <div className="mx-56">
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10 mt-10 flex justify-center">
         Tech-Stack
       </h1>
@@ -36,7 +37,7 @@ const TechStackCard = () => {
               className="custom-spotlight-card bg-neutral-900/70"
               spotlightColor="rgba(0, 229, 255, 0.2)"
             >
-              <img src={tech.icon} alt={tech.title} className="h-12 min-w-12" />
+              <img src={tech.icon} alt={tech.title} className="h-12 min-w-12 justify-self-center" />
               <p className="text-sm md:text-xl mb-1">{tech.title}</p>
               <p className="text-xs md:text-xs font-extralight">{tech.progress}</p>    
             </SpotlightCard>
