@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import projects7 from "../assets/project7.png";
 import projects8 from "../assets/project8.png";
 import projects9 from "../assets/project9.png";
-import projects3 from "../assets/Project3.jpg";
+import project10 from "../assets/Project10.png";
 import projects4 from "../assets/Project4.jpg";
 import projects5 from "../assets/projects5.webp";
 import projects6 from "../assets/projects6.webp";
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "HairRevive",
     description: "Hair regrowth solutions powered by science",
-    image: projects3,
+    image: project10,
     techStack: ["React", "Node.js", "Express", "MongoDB"],
     detailedDescription: "HairRevive provides scientifically backed hair regrowth solutions...",
     features: ["AI analysis", "Treatment plans", "Product recommendations"],
