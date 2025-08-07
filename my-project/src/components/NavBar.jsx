@@ -6,6 +6,7 @@ import { LINKS } from "../constants/index.js";
 import { Link } from "react-router-dom";
 import CircularText from "./CircularText.jsx";
 import Button from "./Button.jsx";
+import { motion, AnimatePresence } from "framer-motion"; 
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,23 +55,31 @@ const NavBar = () => {
           </button>
         </div>
       </div>
-      {menuOpen && (
-        <div
-          className="md:hidden p-2 bg-stone-950/95 backdrop-blur-lg 
-            rounded-xl flex flex-col space-y-4 max-w-6xl mx-auto"
+      <AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      key="mobile-menu"
+      initial={{ opacity: 0, y: -10, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: -10, scale: 0.95 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="md:hidden p-2 bg-stone-950/95 backdrop-blur-lg 
+        rounded-xl flex flex-col space-y-4 max-w-6xl mx-auto origin-top"
+    >
+      {LINKS.map((link, index) => (
+        <Link
+          to={link.linker}
+          key={index}
+          onClick={handleClick}
+          className="text-white hover:text-stone-400 transition duration-300"
         >
-          {LINKS.map((link, index) => (
-            <Link
-              to={link.linker}
-              key={index}
-              onClick={handleClick}
-              className="text-white hover:text-stone-400 transition duration-300"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      )}
+          {link.label}
+        </Link>
+      ))}
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </nav>
   );
 };
